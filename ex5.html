@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function(함수)</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function number(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+      }
+        document.write('<li>1</li>');
+        number();
+        document.write('<li>3</li>');
+        number();
+      </script>
+    </ul>
+    <h2>Parameter(매개변수) & Argument(인자) 통틀어서 입력</h2>
+    <script>
+    function onePulsone(){
+      document.write(1+1+'<br>');
+    }
+    onePulsone();
+    function sum(left, right){ //값(Argument)을 받아서 함수 안으로 매개해주는 이러한 변수들을 매개변수(parameter)라고 부른다.
+      document.write(left+right+'<br>');
+    }
+    sum(2,3);// 함수로 전달하는 2와 3 이라는 값을 한국어로는 인자 영어로는 Argument라고 부른다.
+    sum(3,4);
+    </script>
+    <h2>Return(출력)</h2>
+    <script>
+      function sum2(left, right){
+        return left+right;
+      }
+      document.write(sum2(2,3)+'<br>');
+      document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+      document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+    </script>
+  </body>
+</html>
